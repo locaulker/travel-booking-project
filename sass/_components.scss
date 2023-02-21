@@ -1,12 +1,12 @@
 //////////////////////////////
-// 1. LOGO
+// 01. LOGO
 .logo {
   height: 3.25rem;
   margin-left: 2rem;
 }
 
 //////////////////////////////
-// 2. SEARCHBOX
+// 02. SEARCHBOX
 .search {
   flex: 0 0 40%;
 
@@ -63,7 +63,7 @@
 }
 
 //////////////////////////////
-// 3. USER NAVIGATION
+// 03. USER NAVIGATION
 .user-nav {
   align-self: stretch;
 
@@ -116,7 +116,7 @@
 }
 
 //////////////////////////////
-// 4. SIDE NAVIGATION
+// 04. SIDE NAVIGATION
 .side-nav {
   font-size: 1.4rem;
   list-style: none;
@@ -176,7 +176,7 @@
 }
 
 //////////////////////////////
-// 5. LEGAL TEXT
+// 05. LEGAL TEXT
 .legal {
   font-size: 1.2rem;
   color: var(--color-grey-light-4);
@@ -185,7 +185,7 @@
 }
 
 //////////////////////////////
-// 6. HOTEL GALLERY PHOTOS
+// 06. HOTEL GALLERY PHOTOS
 .gallery {
   display: flex;
 
@@ -196,7 +196,7 @@
 }
 
 //////////////////////////////
-// 7. HOTEL OVERVIEW
+// 07. HOTEL OVERVIEW
 .overview {
   display: flex;
   align-items: center;
@@ -258,7 +258,7 @@
   }
 
   //////////////////////////////
-  // 8. BUTTON INLINE
+  // 08. BUTTON INLINE
   .btn-inline {
     border: none;
     color: var(--color-primary);
@@ -297,3 +297,49 @@
     box-shadow: none;
   }
 }
+
+//////////////////////////////
+// 09. PARAGRAPH
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+//////////////////////////////
+// 10. LIST
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: var(--line);
+  border-bottom: var(--line);
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex: 0 0 50%;
+    margin-bottom: 0.7rem;
+  }
+
+  &__item::before {
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.7rem;
+
+    // Older browsers
+    // background-image: url(../img/chevron-thin-right.svg);
+    // background-size: cover;
+
+    // use masks for newer browsers
+    background-color: var(--color-primary);
+    -webkit-mask-image: url(../img/chevron-thin-right.svg);
+    -webkit-mask-size: cover;
+    mask-image: url(../img/chevron-thin-right.svg);
+    mask-size: cover;
+  }
+}
+
+//////////////////////////////
+// 11. RECOMMEND
