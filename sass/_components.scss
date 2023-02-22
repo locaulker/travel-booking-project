@@ -256,28 +256,37 @@
     font-size: 0.8rem;
     text-transform: uppercase;
   }
+}
 
-  //////////////////////////////
-  // 08. BUTTON INLINE
-  .btn-inline {
-    border: none;
-    color: var(--color-primary);
-    font-size: inherit;
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 2px;
-    display: inline-block;
-    background-color: transparent;
-    cursor: pointer;
-    transition: all 0.2s;
+//////////////////////////////
+// 08. BUTTON INLINE
+.btn-inline {
+  border: none;
+  color: var(--color-primary);
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
 
-    &:hover {
-      color: var(--color-grey-dark-1);
+  & span {
+    margin-left: 3px;
+    transition: margin-left 0.2s;
+  }
+
+  &:hover {
+    color: var(--color-grey-dark-1);
+
+    span {
+      margin-left: 8px;
     }
+  }
 
-    &:focus {
-      outline: none;
-      animation: pulsate 1s infinite;
-    }
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
   }
 }
 
