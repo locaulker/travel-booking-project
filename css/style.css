@@ -456,6 +456,9 @@ body {
   @media only screen and (max-width: 65.25em) {
     .detail {
       padding: 3rem; } }
+  @media only screen and (max-width: 65.25em) {
+    .detail {
+      flex-direction: column; } }
 
 .description {
   background-color: var(--color-white);
